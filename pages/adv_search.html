@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <meta charset=UTF-8>
+        <link rel="stylesheet" href="../styles/style.css"/>
+        
+    </head>
+
+    <body>
+        <header>
+            <a href="../index.html" class="links">All</a> | 
+            <a href="img_search.html" class="links">Images</a>
+        </header>
+        <h2>Advanced Search</h2>
+        <br><hr><br>
+        <div class="grid">
+            <div><label>all of these words:</label></div>
+            <div><input type="text" id="All"></div>
+            <div><label>this exact word or phrase:</label></div>
+            <div><input type="text" id="All"></div>
+            <div><label>any of these words:</label></div>
+            <div><input type="text" id="All"></div>
+            <div><label>none of these words</label></div>
+            <div"><input type="text" id="All"></div>
+            
+        </div>   
+        <br><hr><br>
+        <div class="container">
+            <button class="btn advBtn" onclick="search(document.getElementById('inValue').value, 'search')" title="Advanced Search">
+                Advanced Search
+            </button>
+        </div>
+        
+        <div id="noVal" class="noVal">
+            There ain't nothing to search about!
+        </div>
+
+        <script src="../js/search.js"></script> 
+    </body>
+</html>
