@@ -3,7 +3,6 @@ function search (val) {
         notify("noVal")
         return
     }
-    console.log(val)
     let final = ""
     const arr = val.split(" ")
     for (i in arr){
@@ -12,7 +11,6 @@ function search (val) {
             final += "+"
         }
     }
-    console.log(final)
     window.open("https://www.google.com/search?q="+final, "_self")
 }
 
@@ -28,14 +26,12 @@ function lucky (val) {
             final += "+"
         }
     }
-    console.log(final)
     window.open("https://www.google.com/search?q="+final+"&btnI=I'm+Feeling+Lucky", "_self")
 }
 
 function notify(state){
     const element = document.getElementById(state)
     animate(element)
-
 }
 
 function animate (element){
