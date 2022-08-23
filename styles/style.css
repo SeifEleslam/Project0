@@ -112,7 +112,7 @@ hr{
     position: relative;
     display: grid;
     column-gap: 2%;
-    grid-template:50px 50px 50px / 175px auto ;
+    grid-template:50px 50px 50px 50px/ 175px auto ;
     font-family: fantasy;
     font-size: small;
     color: white;
@@ -123,9 +123,17 @@ hr{
 
 }
 
+.item{
+    display: flex;
+    align-items: center;
+}
+
 input{
     width: 98%;
     border: 1px dashed white;
+    font-family: fantasy;
+    color: gray;
+    font-size: medium;
 }
 
 input:focus{

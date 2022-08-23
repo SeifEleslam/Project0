@@ -15,19 +15,19 @@
         <h2>Advanced Search</h2>
         <br><hr><br>
         <div class="grid">
-            <div><label>all of these words:</label></div>
-            <div><input type="text" id="All"></div>
-            <div><label>this exact word or phrase:</label></div>
-            <div><input type="text" id="All"></div>
-            <div><label>any of these words:</label></div>
-            <div><input type="text" id="All"></div>
-            <div><label>none of these words</label></div>
-            <div"><input type="text" id="All"></div>
+            <div class="item"><label>all of these words:</label></div>
+            <div class="item"><input type="text" id="all"></div>
+            <div class="item"><label>this exact word or phrase:</label></div>
+            <div class="item"><input type="text" id="exact"></div>
+            <div class="item"><label>any of these words:</label></div>
+            <div class="item"><input type="text" id="any"></div>
+            <div class="item"><label>none of these words</label></div>
+            <div class="item"><input type="text" id="none"></div>
             
         </div>   
         <br><hr><br>
         <div class="container">
-            <button class="btn advBtn" onclick="search(document.getElementById('inValue').value, 'search')" title="Advanced Search">
+            <button id="myBtn" class="btn advBtn" onclick="advSearch(document.getElementById('all').value, document.getElementById('exact').value, document.getElementById('any').value,document.getElementById('none').value)" title="Advanced Search">
                 Advanced Search
             </button>
         </div>
