@@ -1,8 +1,4 @@
-function search (val) {
-    if (val == ""){
-        notify("noVal")
-        return
-    }
+function search (val, type) {
     let final = ""
     const arr = val.split(" ")
     for (i in arr){
@@ -11,22 +7,26 @@ function search (val) {
             final += "+"
         }
     }
-    window.open("https://www.google.com/search?q="+final, "_self")
-}
-
-function lucky (val) {
-    if (val == ""){
-        window.open("https://www.google.com/doodles","_self")
-    }
-    let final = ""
-    const arr = val.split(" ")
-    for (i in arr){
-        final += arr[i]
-        if (i < (arr.length)-1){
-            final += "+"
+    if (type == "search"){
+        if (val == ""){
+            notify("noVal")
+            return
         }
+        window.open("https://www.google.com/search?q="+final, "_self")
     }
-    window.open("https://www.google.com/search?q="+final+"&btnI=I'm+Feeling+Lucky", "_self")
+    else if (type == "lucky"){
+        if (val == ""){
+            window.open("https://www.google.com/doodles","_self")
+        }
+        window.open("https://www.google.com/search?q="+final+"&btnI=I'm+Feeling+Lucky", "_self")
+    }
+    else if(type == "images"){
+        if (val == ""){
+            notify("noVal")
+            return
+        }
+        window.open("https://www.google.com/search?q="+final+"&tbm=isch", "_self")
+    }
 }
 
 function notify(state){

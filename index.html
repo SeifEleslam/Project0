@@ -4,24 +4,24 @@
         <title>Search</title>
         <meta charset=UTF-8>
         <link rel="stylesheet" href="styles/style.css"/>
-        <link rel="stylesheet" href="src/font-awesome/css/font-awesome.min.css">
-        <script src="https://kit.fontawesome.com/9fd54fa49a.js" crossorigin="anonymous"></script>
         <script src="js/search.js"></script> 
     </head>
 
     <body>
         <header>
-            <a href="img_search.html" class="links">Images</a> | 
+            <a href="pages/img_search.html" class="links">Images</a> | 
             <a href="adv_search.html" class="links">Advanced</a>
         </header>
-        <div class="center">
-            <div class="main">
-                <h1>Fake Googling</h1>
-                <input type="text" placeholder="search" class="bar" id="inValue">
-                <br>
-                <button class="btn" onclick="search(document.getElementById('inValue').value)" title="Search Google"><i class="fa-solid fa-search"></i></button>
-                <button class="btn" onclick="lucky(document.getElementById('inValue').value)" title="Feeling Lucky"><i class="fa-solid fa-dice"></i></button>
-            </div>
+        <div class="main">
+            <h1>Fake Googling</h1>
+            <input type="text" placeholder="search" class="bar" id="inValue">
+            <br>
+            <button class="btn" onclick="search(document.getElementById('inValue').value, 'search')" title="Search Google">
+                Search
+            </button>
+            <button class="btn" onclick="search(document.getElementById('inValue').value, 'lucky')" title="Feeling Lucky">
+                Feeling Lucky
+            </button>
         </div>
         
         <div id="noVal" class="noVal">

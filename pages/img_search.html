@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <meta charset=UTF-8>
+        <link rel="stylesheet" href="../styles/style.css"/>
+        <script src="../js/search.js"></script> 
+    </head>
+
+    <body>
+        <header>
+            <a href="../index.html" class="links">All</a> | 
+            <a href="adv_search.html" class="links">Advanced</a>
+        </header>
+        <div class="center">
+            <div class="main">
+                <h1>Fake Googling</h1>
+                <input type="text" placeholder="search" class="bar" id="inValue">
+                <br>
+                <button class="btn" onclick="search(document.getElementById('inValue').value, 'images')" title="Search Google">Search</button>
+            </div>
+        </div>
+        
+        <div id="noVal" class="noVal">
+            There ain't nothing to search about!
+        </div>
+
+    </body>
+</html>

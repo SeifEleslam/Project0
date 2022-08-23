@@ -1,22 +1,21 @@
+body{
+    background-color: #2596be;
+    height: 100%;
+}
 header {
     margin-top: 0px;
     text-align: right;
 }
-.center{
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65%;
-    width: 100%;
-}
+
 .main {
     text-align: center;
-    top: 50px;
-    position: relative;
+    top: 25%;
+    left: 0;
+    position: absolute;
     width: 100%;
 }
+
+
 
 .bar {
     margin-top: 30px;
@@ -33,7 +32,6 @@ header {
 
 .bar:focus, .bar:hover {
     outline: none;
-    border: 0px ;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: 200ms;
 }
@@ -42,13 +40,13 @@ header {
 .btn {
     background-color: #2596be;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 1rem;
     color:white;
-    padding: 20px;
+    padding: 10px;
     margin: 2rem;
-    width: 5rem;
     cursor: pointer;
+    
 
 
 }
@@ -66,13 +64,9 @@ i{
     font-size: 1.5rem;
 }
 h1{
-    color: #2596be;
+    color: white;
     font-size: 4rem;
     font-family: fantasy;
-}
-
-.show{
-    display: block;
 }
 
 .noVal{
@@ -81,9 +75,9 @@ h1{
     opacity: 70%;
     padding: 10px;
     border-radius: 5px;
-    background-color: red;
+    background-color:aliceblue;
     max-width: 50%;
-    color: white;
+    color:#2596be;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: 300ms;
     -moz-transition: 300ms;
@@ -91,9 +85,18 @@ h1{
 
 
 }
+
 .show{
     top: 10px;
 }
 
+.links{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
 
+.links:hover{
+    text-decoration: underline;
+}
 
